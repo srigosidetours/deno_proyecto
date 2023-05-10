@@ -1,6 +1,7 @@
 import Cabecera from "../components/Cabecera.tsx";
 import Pie from "../components/Pie.tsx";
 import Counter from "../islands/Counter.tsx";
+import Senial from "../islands/Senial.tsx";
 
 export default function HolaMundo() {
   const year: number = new Date().getFullYear();
@@ -9,6 +10,7 @@ export default function HolaMundo() {
       <Cabecera />
       <div class="p-3 min-h-screen bg-yellow-200">
         <Counter start={3} />
+        <Senial />
         <figure class="text-center">
           <img
             src="/logo.svg"
