@@ -1,22 +1,22 @@
 export default function Cabecera() {
   return (
     <>
-      <header class="bg-yellow-300 text-gray-900 py-4">
+      <header class="bg-yellow-300 py-4">
         <div class="container mx-auto flex justify-between items-center">
-          <h1 class="text-xl p-3 whitespace-nowrap bg-gradient-to-r from-black via-yellow-900 to-black bg-clip-text font-bold uppercase text-transparent">
+          <h1 class="text-xl p-3 whitespace-nowrap bg-gradient-to-r from-black via-green-800 to-black bg-clip-text font-bold uppercase text-transparent">
             Comovas.es
           </h1>
 
           <nav>
             <ul class="flex">
               <li>
-                <a href="/" class="px-3 py-2 hover:text-yellow-900">Inicio</a>
+                <a href="/" class="px-3 py-2 hover:text-green-900">Inicio</a>
               </li>
               <li>
-                <a href="/uno" class="px-3 py-2 hover:text-yellow-900">1</a>
+                <a href="/uno" class="px-3 py-2 hover:text-green-900">1</a>
               </li>
               <li>
-                <a href="/dos" class="px-3 py-2 hover:text-yellow-900">2</a>
+                <a href="/dos" class="px-3 py-2 hover:text-green-900">2</a>
               </li>
             </ul>
           </nav>
