@@ -1,4 +1,15 @@
-FROM denoland/deno:debian-1.30.3
+FROM denoland/deno:1.25.0
 
-RUN apt update && apt install -y unzip
-RUN deno upgrade
+ARG GIT_REVISION
+ENV DENO_DEPLOYMENT_ID=${GIT_REVISION}
+
+WORKDIR /app
+
+COPY . .
+
+## EN CODESANDBOX LOS COMANDOS RUN SE MUEVEN EL EL `tasks.json`
+## RUN deno cache main.ts --import-map=import_map.json
+
+EXPOSE 8000
+
+CMD ["run", "-A", "main.ts"]

@@ -1,13 +1,25 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": ["rm deno.lock"],
+  "setupTasks": [
+    /*{
+      "name": "rm deno.lock",
+      "command": "rm deno.lock"
+    },*/
+    {
+      "name": "deno cache main.ts --import-map=import_map.json",
+      "command": "deno cache main.ts --import-map=import_map.json"
+    }
+  ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "start": {
       "name": "start",
       "command": "deno task start",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 8000
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ export default function Cabecera() {
       <header class="bg-yellow-300 py-4">
         <div class="container mx-auto flex justify-between items-center">
           <h1 class="text-xl p-3 whitespace-nowrap bg-gradient-to-r from-black via-green-800 to-black bg-clip-text font-bold uppercase text-transparent">
-            Comovas.es
+            Hola :D
           </h1>
 
           <nav>
